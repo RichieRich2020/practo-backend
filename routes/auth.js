@@ -13,7 +13,7 @@ const authRouter = express.Router();
 authRouter.post('/register', register);
 authRouter.post('/login', login);
 authRouter.get('/', getAllUser);
-// authRouter.get('/github-signin/:code', signi
+// authRouter.get('/github-signin/:code',
 authRouter.get('/loggedInUser', authMiddleware, getLoggedInUser);
 
 module.exports = authRouter;
